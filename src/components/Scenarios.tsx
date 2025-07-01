@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hospital, Video, GraduationCap, Stethoscope, Users, BookOpen } from 'lucide-react';
+import { Guitar as Hospital, Video, GraduationCap, Stethoscope, Users, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Scenarios: React.FC = () => {
