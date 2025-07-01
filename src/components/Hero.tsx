@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Microscope, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -14,18 +14,19 @@ const Hero: React.FC = () => {
             className="mb-8"
           >
             <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <Sparkles className="h-4 w-4 text-white" />
-              <span className="text-white text-sm font-medium">AI-Powered Waste Classification</span>
+              <Microscope className="h-4 w-4 text-white" />
+              <span className="text-white text-sm font-medium">AI-Powered Blood Cell Analysis</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Transforming Waste Management with{' '}
-              <span className="text-green-200">Transfer Learning</span>
+              Revolutionizing Healthcare with{' '}
+              <span className="text-blue-200">HematoVision</span>
             </h1>
             
-            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Harness the power of artificial intelligence to automatically classify waste materials, 
-              optimize recycling processes, and create a more sustainable future for our planet.
+            <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Harness the power of transfer learning to accurately classify blood cells. 
+              Our advanced AI model identifies eosinophils, lymphocytes, monocytes, and neutrophils 
+              with exceptional precision, transforming diagnostic workflows.
             </p>
           </motion.div>
 
@@ -39,6 +40,7 @@ const Hero: React.FC = () => {
               href="#classifier"
               className="inline-flex items-center space-x-2 bg-white text-primary-600 font-semibold py-4 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
+              <Heart className="h-5 w-5" />
               <span>Try Classifier</span>
               <ArrowRight className="h-5 w-5" />
             </a>
@@ -49,6 +51,32 @@ const Hero: React.FC = () => {
             >
               <span>Learn More</span>
             </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-16"
+          >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white/80">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">12,000+</div>
+                <div className="text-sm">Annotated Images</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">4</div>
+                <div className="text-sm">Cell Types</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">95%+</div>
+                <div className="text-sm">Accuracy</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white">&lt;1s</div>
+                <div className="text-sm">Analysis Time</div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

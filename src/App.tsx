@@ -2,8 +2,9 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import WasteClassifier from './components/WasteClassifier';
+import BloodCellClassifier from './components/BloodCellClassifier';
 import Statistics from './components/Statistics';
+import Scenarios from './components/Scenarios';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Features />
-      <WasteClassifier />
+      <BloodCellClassifier />
+      <Scenarios />
       <Statistics />
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Zap, Leaf, Target, BarChart3, Shield } from 'lucide-react';
+import { Brain, Zap, Target, Microscope, BarChart3, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Features: React.FC = () => {
@@ -7,37 +7,37 @@ const Features: React.FC = () => {
     {
       icon: Brain,
       title: 'Transfer Learning',
-      description: 'Leverages pre-trained neural networks to achieve high accuracy with minimal training data.',
-      color: 'bg-blue-500'
+      description: 'Leverages pre-trained CNNs to achieve superior accuracy with efficient training on 12,000 annotated blood cell images.',
+      color: 'bg-primary-500'
     },
     {
       icon: Zap,
-      title: 'Real-time Classification',
-      description: 'Instant waste material identification with sub-second response times.',
-      color: 'bg-yellow-500'
+      title: 'Real-time Analysis',
+      description: 'Instant blood cell classification with sub-second response times for rapid diagnostic workflows.',
+      color: 'bg-medical-500'
     },
     {
       icon: Target,
-      title: 'High Accuracy',
-      description: 'Achieves 95%+ accuracy across multiple waste categories using advanced AI models.',
-      color: 'bg-red-500'
-    },
-    {
-      icon: Leaf,
-      title: 'Eco-Friendly',
-      description: 'Promotes sustainable practices by optimizing recycling and waste sorting processes.',
+      title: 'High Precision',
+      description: 'Achieves exceptional accuracy in classifying eosinophils, lymphocytes, monocytes, and neutrophils.',
       color: 'bg-green-500'
     },
     {
-      icon: BarChart3,
-      title: 'Analytics Dashboard',
-      description: 'Comprehensive insights and statistics to track waste management performance.',
+      icon: Microscope,
+      title: 'Clinical Grade',
+      description: 'Designed for healthcare professionals with enterprise-level reliability and medical-grade accuracy.',
       color: 'bg-purple-500'
     },
     {
+      icon: BarChart3,
+      title: 'Comprehensive Reports',
+      description: 'Detailed analysis reports with cell counts, percentages, and diagnostic insights for pathologists.',
+      color: 'bg-orange-500'
+    },
+    {
       icon: Shield,
-      title: 'Reliable & Secure',
-      description: 'Enterprise-grade security with consistent performance in production environments.',
+      title: 'HIPAA Compliant',
+      description: 'Secure, privacy-focused platform ensuring patient data protection and regulatory compliance.',
       color: 'bg-indigo-500'
     }
   ];
@@ -53,11 +53,11 @@ const Features: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Cutting-Edge Features
+              Advanced Medical AI Features
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our AI-powered waste management solution combines advanced machine learning 
-              with practical sustainability goals.
+              Our cutting-edge transfer learning technology delivers precise blood cell classification 
+              for enhanced diagnostic accuracy and improved patient outcomes.
             </p>
           </motion.div>
         </div>

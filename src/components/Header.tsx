@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Recycle } from 'lucide-react';
+import { Menu, X, Heart } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,6 +8,7 @@ const Header: React.FC = () => {
     { name: 'Home', href: '#home' },
     { name: 'Features', href: '#features' },
     { name: 'Classifier', href: '#classifier' },
+    { name: 'Scenarios', href: '#scenarios' },
     { name: 'Statistics', href: '#statistics' },
   ];
 
@@ -17,9 +18,9 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <div className="p-2 bg-primary-600 rounded-lg">
-              <Recycle className="h-6 w-6 text-white" />
+              <Heart className="h-6 w-6 text-white animate-heartbeat" />
             </div>
-            <span className="text-xl font-bold text-gray-900">EcoClassify</span>
+            <span className="text-xl font-bold text-gray-900">HematoVision</span>
           </div>
 
           {/* Desktop Navigation */}
